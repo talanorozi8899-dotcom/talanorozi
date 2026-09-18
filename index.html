@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>طلای نوروزی | فروش و قیمت طلا</title>
+<title>طلای نوروزی | فروش طلا</title>
 
 <style>
 *{
@@ -87,32 +87,6 @@ nav a:hover{
     border-right:5px solid #d4af37;
     padding-right:10px;
     margin-bottom:18px;
-}
-
-.gold-rate{
-    background:#fffdf4;
-    border:2px solid #d4af37;
-    border-radius:18px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 4px 15px #ddd;
-}
-
-.gold-rate h3{
-    margin-top:0;
-    color:#806000;
-}
-
-#gold18k-price{
-    font-size:30px;
-    font-weight:bold;
-    color:#a77b00;
-    margin:15px 0;
-}
-
-.rate-time{
-    color:#777;
-    font-size:13px;
 }
 
 .products{
@@ -227,14 +201,6 @@ footer{
     display:none;
 }
 
-.status{
-    padding:10px;
-    border-radius:10px;
-    background:#fff3cd;
-    color:#806000;
-    margin-top:10px;
-}
-
 /* =========================
    انتخاب عکس از گالری
 ========================= */
@@ -301,12 +267,11 @@ footer{
 
 <header>
     <h1>✨ طلای نوروزی ✨</h1>
-    <p>مرجع قیمت و فروش طلا</p>
+    <p>فروش طلا و محصولات طلای نوروزی</p>
 </header>
 
 <nav>
     <a href="#home">خانه</a>
-    <a href="#rate">نرخ طلا</a>
     <a href="#gold">طلاها</a>
     <a href="#branches">شعبه‌ها</a>
     <a href="#owner">مالک</a>
@@ -317,33 +282,8 @@ footer{
 <section id="home" class="hero">
     <h2>به طلای نوروزی خوش آمدید</h2>
     <p>
-        مشاهده نرخ روز طلای ۱۸ عیار و محصولات طلای نوروزی
+        مشاهده و خرید محصولات طلای نوروزی
     </p>
-</section>
-
-
-<section id="rate" class="section">
-
-    <h2 class="section-title">💰 نرخ روز طلا</h2>
-
-    <div class="gold-rate">
-
-        <h3>طلای ۱۸ عیار</h3>
-
-        <div id="gold18k-price">
-            نرخ در حال دریافت است...
-        </div>
-
-        <div class="rate-time" id="rate-time">
-            آخرین بررسی: —
-        </div>
-
-        <div class="status">
-            نرخ این قسمت باید از سرویس قیمت طلا دریافت شود.
-        </div>
-
-    </div>
-
 </section>
 
 
@@ -483,21 +423,6 @@ footer{
 
         <h3>⚙️ تنظیمات مالک</h3>
 
-        <label>نرخ دستی طلای ۱۸ عیار</label>
-
-        <input
-            type="number"
-            id="manualRate"
-            placeholder="مثلاً 7000000"
-        >
-
-        <button class="owner-save" onclick="saveRate()">
-            ذخیره نرخ
-        </button>
-
-
-        <hr>
-
 
         <h3>➕ افزودن طلا</h3>
 
@@ -517,8 +442,6 @@ footer{
             value="18"
         >
 
-
-        <!-- انتخاب عکس از گالری -->
 
         <div class="gallery-box">
 
@@ -726,59 +649,6 @@ document
 
 
 /* =========================
-   نرخ طلا
-========================= */
-
-function showRate(rate){
-
-    const box =
-        document.getElementById("gold18k-price");
-
-    box.textContent =
-        Number(rate).toLocaleString("fa-IR")
-        + " تومان / گرم";
-
-    document.getElementById("rate-time")
-        .textContent =
-        "آخرین بروزرسانی: "
-        + new Date().toLocaleTimeString("fa-IR");
-
-}
-
-
-/* =========================
-   ذخیره نرخ دستی
-========================= */
-
-function saveRate(){
-
-    const rate =
-        document.getElementById("manualRate").value;
-
-    if(!rate){
-
-        alert("لطفاً نرخ را وارد کنید.");
-
-        return;
-
-    }
-
-
-    localStorage.setItem(
-        "gold18kRate",
-        rate
-    );
-
-
-    showRate(rate);
-
-
-    alert("نرخ ذخیره شد.");
-
-}
-
-
-/* =========================
    حذف فقط یک طلا
 ========================= */
 
@@ -884,8 +754,6 @@ function addGold(){
         .appendChild(product);
 
 
-    /* پاک کردن فرم */
-
     document.getElementById("newGoldName")
         .value = "";
 
@@ -981,26 +849,12 @@ function saveBranches(){
 
 function loadSettings(){
 
-    const rate =
-        localStorage.getItem("gold18kRate");
-
-
     const branch1 =
         localStorage.getItem("branch1");
 
 
     const branch2 =
         localStorage.getItem("branch2");
-
-
-    if(rate){
-
-        document.getElementById("manualRate")
-            .value = rate;
-
-        showRate(rate);
-
-    }
 
 
     if(branch1){
@@ -1032,36 +886,7 @@ function loadSettings(){
 
 }
 
-
-/* =========================
-   شروع سایت
-========================= */
-
-window.addEventListener(
-    "load",
-    function(){
-
-        const rate =
-            localStorage.getItem("gold18kRate");
-
-
-        if(rate){
-
-            showRate(rate);
-
-        }else{
-
-            document.getElementById(
-                "gold18k-price"
-            ).textContent =
-                "قیمت را از پنل مالک وارد کنید";
-
-        }
-
-    }
-);
-
 </script>
 
 </body>
-        </html>
+    </html>
