@@ -3,323 +3,296 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>طلای نوروزی</title>
+
+<title>طلای نوروزی | فروش و قیمت طلا</title>
 
 <style>
 *{
     box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-html{
-    scroll-behavior:smooth;
 }
 
 body{
+    margin:0;
     font-family:Tahoma,Arial,sans-serif;
-    background:#ffffff !important;
+    background:#ffffff;
     color:#222;
 }
 
 header{
-    background:#ffffff;
-    padding:20px 7%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:1px solid #eeeeee;
-    box-shadow:0 2px 10px rgba(0,0,0,.06);
-    position:sticky;
-    top:0;
-    z-index:100;
+    background:linear-gradient(135deg,#fff8df,#d4af37);
+    color:#222;
+    padding:25px 15px;
+    text-align:center;
+    border-bottom:3px solid #b8941f;
 }
 
-.logo{
-    color:#d4af37;
-    font-size:30px;
-    font-weight:900;
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    margin:10px 0 0;
 }
 
 nav{
+    background:#fff;
     display:flex;
+    justify-content:center;
     flex-wrap:wrap;
-    gap:5px;
+    gap:8px;
+    padding:12px;
+    box-shadow:0 2px 8px #ddd;
 }
 
 nav a{
-    color:#333;
     text-decoration:none;
-    padding:9px 12px;
-    border-radius:8px;
+    color:#8a6a00;
+    padding:10px 15px;
+    border:1px solid #d4af37;
+    border-radius:10px;
+    font-weight:bold;
 }
 
 nav a:hover{
-    color:#b08a20;
-    background:#fffaf0;
-}
-
-.hero{
-    text-align:center;
-    padding:80px 20px;
-    background:#ffffff;
-}
-
-.hero h1{
-    color:#d4af37;
-    font-size:44px;
-    font-weight:900;
-    margin-bottom:15px;
-}
-
-.hero p{
-    color:#666;
-    line-height:2;
-}
-
-.container{
-    width:90%;
-    max-width:1250px;
-    margin:45px auto;
-    background:#ffffff;
-}
-
-.title{
-    text-align:center;
-    color:#d4af37;
-    font-size:30px;
-    font-weight:900;
-    margin-bottom:28px;
-}
-
-.rate-box{
-    max-width:700px;
-    margin:0 auto;
-    padding:30px 20px;
-    text-align:center;
-    border:1px solid #eadfb8;
-    border-radius:18px;
-    background:#fffdf6;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
-}
-
-.rate-title{
-    color:#b08a20;
-    font-size:24px;
-    font-weight:900;
-}
-
-.rate-number{
-    margin-top:14px;
-    color:#d4af37;
-    font-size:38px;
-    font-weight:900;
-}
-
-.rate-unit{
-    font-size:18px;
-    color:#555;
-}
-
-.rate-note{
-    margin-top:10px;
-    color:#888;
-    font-size:13px;
-}
-
-.filters{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-bottom:25px;
-}
-
-.filters input,
-.filters select{
-    flex:1;
-    min-width:200px;
-    padding:13px;
-    border:1px solid #ddd;
-    border-radius:9px;
-    background:#fff;
-    color:#333;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:24px;
-}
-
-.product{
-    background:#ffffff;
-    border:1px solid #eeeeee;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
-    transition:.25s;
-}
-
-.product:hover{
-    transform:translateY(-5px);
-    border-color:#d4af37;
-}
-
-.product img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
-    display:block;
-}
-
-.product-info{
-    padding:18px;
-    background:#ffffff;
-}
-
-.product h3{
-    color:#333;
-    margin-bottom:10px;
-}
-
-.detail{
-    color:#666;
-    line-height:2;
-}
-
-.badge{
-    display:inline-block;
-    padding:5px 9px;
-    border-radius:7px;
-    background:#fffaf0;
-    color:#b08a20;
-    font-size:12px;
-    margin-top:8px;
-}
-
-.delete-btn{
-    margin-top:15px;
-    padding:9px 14px;
-    border:1px solid #c62828;
-    border-radius:8px;
-    background:#fff;
-    color:#c62828;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.delete-btn:hover{
-    background:#c62828;
-    color:#fff;
-}
-
-.branches{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:22px;
-}
-
-.branch{
-    background:#ffffff;
-    border:1px solid #eeeeee;
-    border-radius:15px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
-}
-
-.branch h3{
-    color:#d4af37;
-    margin-bottom:12px;
-}
-
-.branch p{
-    line-height:2.2;
-    color:#555;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:18px;
-    padding:12px 24px;
-    border:1px solid #d4af37;
-    border-radius:9px;
-    background:#ffffff;
-    color:#b08a20;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.btn:hover{
     background:#d4af37;
     color:#fff;
 }
 
-.owner{
-    background:#ffffff;
-    border:1px solid #eeeeee;
-    border-radius:15px;
-    padding:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
-    max-width:600px;
+.container{
+    max-width:1100px;
     margin:auto;
+    padding:20px;
 }
 
-.owner input,
-.owner select{
+.hero{
+    background:linear-gradient(135deg,#fff8df,#f5e4a8);
+    border-radius:20px;
+    padding:35px 20px;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.hero h2{
+    margin-top:0;
+    color:#806000;
+}
+
+.section{
+    margin:25px 0;
+}
+
+.section-title{
+    color:#806000;
+    border-right:5px solid #d4af37;
+    padding-right:10px;
+    margin-bottom:18px;
+}
+
+.gold-rate{
+    background:#fffdf4;
+    border:2px solid #d4af37;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 15px #ddd;
+}
+
+.gold-rate h3{
+    margin-top:0;
+    color:#806000;
+}
+
+#gold18k-price{
+    font-size:30px;
+    font-weight:bold;
+    color:#a77b00;
+    margin:15px 0;
+}
+
+.rate-time{
+    color:#777;
+    font-size:13px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+
+.product{
+    background:#fff;
+    border:1px solid #e3d39a;
+    border-radius:16px;
+    padding:15px;
+    box-shadow:0 3px 12px #ddd;
+    text-align:center;
+}
+
+.product img{
     width:100%;
-    margin:7px 0;
-    padding:12px;
-    border:1px solid #ddd;
-    border-radius:8px;
-    background:#ffffff;
-    color:#222;
+    height:190px;
+    object-fit:cover;
+    border-radius:12px;
+    background:#f5f5f5;
+}
+
+.product h3{
+    color:#806000;
+}
+
+.product-info{
+    line-height:2;
+}
+
+.delete-btn{
+    display:none;
+    width:100%;
+    border:0;
+    background:#c62828;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.owner-mode .delete-btn{
+    display:block;
+}
+
+.branches{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px;
+}
+
+.branch{
+    border:1px solid #d4af37;
+    border-radius:16px;
+    padding:20px;
+    background:#fffdf5;
 }
 
 .owner-panel{
-    display:none;
-    margin-top:20px;
-}
-
-.gold{
-    color:#d4af37;
-    font-weight:900;
-}
-
-.rate-admin{
-    margin:25px 0;
+    background:#f9f9f9;
+    border:2px solid #d4af37;
+    border-radius:18px;
     padding:20px;
-    border:1px solid #eadfb8;
-    border-radius:14px;
-    background:#fffdf6;
+}
+
+.owner-panel input,
+.owner-panel select{
+    width:100%;
+    padding:11px;
+    margin:6px 0 12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    border:0;
+    border-radius:9px;
+    padding:10px 15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.owner-login{
+    background:#d4af37;
+    color:white;
+}
+
+.owner-save{
+    background:#806000;
+    color:white;
+}
+
+.owner-logout{
+    background:#555;
+    color:white;
 }
 
 footer{
-    margin-top:60px;
-    padding:30px;
+    margin-top:40px;
+    background:#fff8df;
+    border-top:2px solid #d4af37;
     text-align:center;
-    background:#ffffff;
-    border-top:1px solid #eeeeee;
-    color:#777;
+    padding:25px;
+    color:#806000;
 }
 
-@media(max-width:700px){
+.hidden{
+    display:none;
+}
 
-    header{
-        flex-direction:column;
-        gap:14px;
+.status{
+    padding:10px;
+    border-radius:10px;
+    background:#fff3cd;
+    color:#806000;
+    margin-top:10px;
+}
+
+/* =========================
+   انتخاب عکس از گالری
+========================= */
+
+.gallery-box{
+    margin:10px 0 15px;
+}
+
+.gallery-label{
+    display:block;
+    width:100%;
+    padding:14px;
+    background:linear-gradient(135deg,#fff8df,#f1d778);
+    border:2px dashed #d4af37;
+    border-radius:12px;
+    color:#806000;
+    text-align:center;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.gallery-label:hover{
+    background:#f5e4a8;
+}
+
+#newGoldImage{
+    display:none;
+}
+
+#imagePreview{
+    margin-top:12px;
+    text-align:center;
+}
+
+#imagePreview img{
+    width:100%;
+    max-width:300px;
+    height:200px;
+    object-fit:contain;
+    border-radius:12px;
+    border:1px solid #d4af37;
+    background:#fff;
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:27px;
     }
 
-    .hero h1{
-        font-size:34px;
+    .container{
+        padding:12px;
     }
 
-    .rate-number{
-        font-size:30px;
+    .product img{
+        height:200px;
     }
 
-    nav{
-        justify-content:center;
-    }
 }
 </style>
 </head>
@@ -327,995 +300,768 @@ footer{
 <body>
 
 <header>
-
-<div class="logo">طلای نوروزی</div>
-
-<nav>
-<a href="#home">خانه</a>
-<a href="#rate">نرخ طلا</a>
-<a href="#products">طلاها</a>
-<a href="#branches">شعبه‌ها</a>
-<a href="#owner">مالک</a>
-</nav>
-
+    <h1>✨ طلای نوروزی ✨</h1>
+    <p>مرجع قیمت و فروش طلا</p>
 </header>
 
+<nav>
+    <a href="#home">خانه</a>
+    <a href="#rate">نرخ طلا</a>
+    <a href="#gold">طلاها</a>
+    <a href="#branches">شعبه‌ها</a>
+    <a href="#owner">مالک</a>
+</nav>
 
-<section class="hero" id="home">
+<div class="container">
 
-<h1>طلای نوروزی</h1>
+<section id="home" class="hero">
+    <h2>به طلای نوروزی خوش آمدید</h2>
+    <p>
+        مشاهده نرخ روز طلای ۱۸ عیار و محصولات طلای نوروزی
+    </p>
+</section>
 
-<p>
-مشاهده طلاها، مشخصات و نرخ روز طلای ۱۸ عیار
-</p>
 
-<a class="btn" href="#products">
-مشاهده طلاها
-</a>
+<section id="rate" class="section">
+
+    <h2 class="section-title">💰 نرخ روز طلا</h2>
+
+    <div class="gold-rate">
+
+        <h3>طلای ۱۸ عیار</h3>
+
+        <div id="gold18k-price">
+            نرخ در حال دریافت است...
+        </div>
+
+        <div class="rate-time" id="rate-time">
+            آخرین بررسی: —
+        </div>
+
+        <div class="status">
+            نرخ این قسمت باید از سرویس قیمت طلا دریافت شود.
+        </div>
+
+    </div>
 
 </section>
 
 
-<section class="container" id="rate">
+<section id="gold" class="section">
 
-<h2 class="title">نرخ روز طلا</h2>
+<h2 class="section-title">💎 طلاهای موجود</h2>
 
-<div class="rate-box">
+<div class="products" id="products">
 
-<div class="rate-title">
-طلای ۱۸ عیار
-</div>
+    <div class="product">
 
-<div class="rate-number">
-<span id="gold18Rate">قیمت ثبت نشده</span>
-</div>
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80">
 
-<div class="rate-unit">
-تومان برای هر گرم
-</div>
+        <h3>گردنبند طلا</h3>
 
-<div class="rate-note">
-آخرین نرخ ثبت‌شده توسط مالک سایت
-</div>
+        <div class="product-info">
+            عیار: ۱۸<br>
+            وزن: ۵ گرم
+        </div>
 
-</div>
+        <button class="delete-btn" onclick="deleteGold(this)">
+            🗑️ حذف این طلا
+        </button>
 
-</section>
+    </div>
 
 
-<section class="container" id="products">
+    <div class="product">
 
-<h2 class="title">طلاها</h2>
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80">
 
-<div class="filters">
+        <h3>انگشتر طلا</h3>
 
-<input
-id="search"
-placeholder="جستجوی طلا..."
-onkeyup="filterProducts()"
->
+        <div class="product-info">
+            عیار: ۱۸<br>
+            وزن: ۳ گرم
+        </div>
 
-<select
-id="category"
-onchange="filterProducts()"
->
+        <button class="delete-btn" onclick="deleteGold(this)">
+            🗑️ حذف این طلا
+        </button>
 
-<option value="all">همه دسته‌ها</option>
-<option value="گردنبند">گردنبند</option>
-<option value="انگشتر">انگشتر</option>
-<option value="دستبند">دستبند</option>
-<option value="گوشواره">گوشواره</option>
+    </div>
 
-</select>
 
-</div>
+    <div class="product">
 
+        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&q=80">
 
-<div class="products" id="productList">
+        <h3>دستبند طلا</h3>
 
+        <div class="product-info">
+            عیار: ۱۸<br>
+            وزن: ۷ گرم
+        </div>
 
-<div class="product" data-category="گردنبند">
+        <button class="delete-btn" onclick="deleteGold(this)">
+            🗑️ حذف این طلا
+        </button>
 
-<img
-src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80"
-alt="گردنبند طلا"
->
+    </div>
 
-<div class="product-info">
 
-<h3>گردنبند طلای ظریف</h3>
+    <div class="product">
 
-<div class="detail">
-وزن: 4.20 گرم<br>
-عیار: 18<br>
-مدل: زنجیری
-</div>
+        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80">
 
-<span class="badge">گردنبند</span>
+        <h3>گوشواره طلا</h3>
 
-<br>
+        <div class="product-info">
+            عیار: ۱۸<br>
+            وزن: ۲ گرم
+        </div>
 
-<button
-class="delete-btn owner-only"
-onclick="removeGold(this)"
-style="display:none"
->
-🗑️ حذف این طلا
-</button>
+        <button class="delete-btn" onclick="deleteGold(this)">
+            🗑️ حذف این طلا
+        </button>
 
-</div>
-
-</div>
-
-
-<div class="product" data-category="انگشتر">
-
-<img
-src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80"
-alt="انگشتر طلا"
->
-
-<div class="product-info">
-
-<h3>انگشتر طلای نگین‌دار</h3>
-
-<div class="detail">
-وزن: 3.10 گرم<br>
-عیار: 18<br>
-نگین: دارد
-</div>
-
-<span class="badge">انگشتر</span>
-
-<br>
-
-<button
-class="delete-btn owner-only"
-onclick="removeGold(this)"
-style="display:none"
->
-🗑️ حذف این طلا
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-category="دستبند">
-
-<img
-src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=80"
-alt="دستبند طلا"
->
-
-<div class="product-info">
-
-<h3>دستبند طلای کلاسیک</h3>
-
-<div class="detail">
-وزن: 6.50 گرم<br>
-عیار: 18<br>
-مدل: کلاسیک
-</div>
-
-<span class="badge">دستبند</span>
-
-<br>
-
-<button
-class="delete-btn owner-only"
-onclick="removeGold(this)"
-style="display:none"
->
-🗑️ حذف این طلا
-</button>
-
-</div>
-
-</div>
-
-
-<div class="product" data-category="گوشواره">
-
-<img
-src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80"
-alt="گوشواره طلا"
->
-
-<div class="product-info">
-
-<h3>گوشواره طلای ظریف</h3>
-
-<div class="detail">
-وزن: 2.80 گرم<br>
-عیار: 18<br>
-مدل: ظریف
-</div>
-
-<span class="badge">گوشواره</span>
-
-<br>
-
-<button
-class="delete-btn owner-only"
-onclick="removeGold(this)"
-style="display:none"
->
-🗑️ حذف این طلا
-</button>
-
-</div>
-
-</div>
-
+    </div>
 
 </div>
 
 </section>
 
 
-<section class="container" id="branches">
+<section id="branches" class="section">
 
-<h2 class="title">
-شعبه‌های طلای نوروزی
-</h2>
+<h2 class="section-title">🏪 شعبه‌های طلای نوروزی</h2>
 
 <div class="branches">
 
+    <div class="branch">
+        <h3>شعبه ۱</h3>
+        <p id="branch1Text">
+            اطلاعات شعبه ۱
+        </p>
+    </div>
 
-<div class="branch">
-
-<h3>شعبه ۱</h3>
-
-<p>
-
-<span id="displayBranch1Address">
-آدرس: آدرس شعبه اول
-</span>
-
-<br>
-
-<span id="displayBranch1Phone">
-تلفن: ۰۹۱۲۱۲۳۴۵۶۷
-</span>
-
-<br>
-
-<span id="displayBranch1Hours">
-ساعت کاری: ۱۰ صبح تا ۹ شب
-</span>
-
-</p>
-
-</div>
-
-
-<div class="branch">
-
-<h3>شعبه ۲</h3>
-
-<p>
-
-<span id="displayBranch2Address">
-آدرس: آدرس شعبه دوم
-</span>
-
-<br>
-
-<span id="displayBranch2Phone">
-تلفن: ۰۹۱۲۱۲۳۴۵۶۸
-</span>
-
-<br>
-
-<span id="displayBranch2Hours">
-ساعت کاری: ۱۰ صبح تا ۹ شب
-</span>
-
-</p>
-
-</div>
-
+    <div class="branch">
+        <h3>شعبه ۲</h3>
+        <p id="branch2Text">
+            اطلاعات شعبه ۲
+        </p>
+    </div>
 
 </div>
 
 </section>
 
 
-<section class="container" id="owner">
+<section id="owner" class="section">
 
-<h2 class="title">
-پنل مالک
-</h2>
+<h2 class="section-title">🔐 پنل مالک</h2>
 
-<div class="owner">
+<div class="owner-panel">
 
-<p class="gold">
-این قسمت فقط مخصوص مالک سایت است.
-</p>
+    <div id="loginBox">
 
-<input
-type="password"
-id="ownerPassword"
-placeholder="رمز ورود مالک"
->
+        <p>
+            برای فعال کردن امکانات مالک، رمز را وارد کنید.
+        </p>
 
-<button
-class="btn"
-onclick="loginOwner()"
->
-ورود مالک
-</button>
+        <input
+            type="password"
+            id="ownerPassword"
+            placeholder="رمز مالک"
+        >
 
+        <button class="owner-login" onclick="ownerLogin()">
+            ورود مالک
+        </button>
 
-<div
-class="owner-panel"
-id="ownerPanel"
->
+    </div>
 
 
-<div class="rate-admin">
+    <div id="ownerControls" class="hidden">
 
-<h3 class="gold">
-تعیین نرخ طلای ۱۸ عیار
-</h3>
+        <h3>⚙️ تنظیمات مالک</h3>
 
-<input
-id="gold18Input"
-type="number"
-inputmode="numeric"
-placeholder="مثلاً ۱۲۵۰۰۰۰۰"
->
+        <label>نرخ دستی طلای ۱۸ عیار</label>
 
-<button
-class="btn"
-onclick="saveGold18Rate()"
->
-ذخیره نرخ طلای ۱۸ عیار
-</button>
+        <input
+            type="number"
+            id="manualRate"
+            placeholder="مثلاً 7000000"
+        >
 
-</div>
+        <button class="owner-save" onclick="saveRate()">
+            ذخیره نرخ
+        </button>
 
 
-<h3 class="gold">
-ویرایش اطلاعات شعبه‌ها
-</h3>
+        <hr>
 
 
-<h4 style="margin-top:15px;color:#b08a20;">
-شعبه ۱
-</h4>
+        <h3>➕ افزودن طلا</h3>
 
-<input
-id="branch1Address"
-placeholder="آدرس شعبه ۱"
->
+        <input
+            id="newGoldName"
+            placeholder="نام طلا"
+        >
 
-<input
-id="branch1Phone"
-placeholder="شماره تلفن شعبه ۱"
->
+        <input
+            id="newGoldWeight"
+            placeholder="وزن به گرم"
+        >
 
-<input
-id="branch1Hours"
-placeholder="ساعت کاری شعبه ۱"
->
-
-
-<h4 style="margin-top:15px;color:#b08a20;">
-شعبه ۲
-</h4>
-
-<input
-id="branch2Address"
-placeholder="آدرس شعبه ۲"
->
-
-<input
-id="branch2Phone"
-placeholder="شماره تلفن شعبه ۲"
->
-
-<input
-id="branch2Hours"
-placeholder="ساعت کاری شعبه ۲"
->
-
-<button
-class="btn"
-onclick="saveBranches()"
->
-ذخیره اطلاعات شعبه‌ها
-</button>
+        <input
+            id="newGoldKarat"
+            placeholder="عیار"
+            value="18"
+        >
 
 
-<h3
-class="gold"
-style="margin-top:30px;"
->
-افزودن طلا
-</h3>
+        <!-- انتخاب عکس از گالری -->
 
-<input
-id="newName"
-placeholder="نام طلا"
->
+        <div class="gallery-box">
 
-<input
-id="newWeight"
-placeholder="وزن"
->
+            <label
+                for="newGoldImage"
+                class="gallery-label"
+            >
+                📸 انتخاب عکس طلا از گالری گوشی
+            </label>
 
-<input
-id="newKar"
-placeholder="عیار"
->
+            <input
+                type="file"
+                id="newGoldImage"
+                accept="image/*"
+            >
 
-<label
-style="display:block;margin-top:8px;color:#b08a20;font-weight:bold;"
->
-📷 عکس طلا از گوشی
-</label>
+            <div id="imagePreview">
 
-<input
-id="newImageFile"
-type="file"
-accept="image/*"
-onchange="previewGoldImage(event)"
-style="padding:10px;"
->
+                <span style="color:#888;">
+                    هنوز عکسی انتخاب نشده
+                </span>
 
-<img
-id="goldImagePreview"
-src=""
-alt="پیش‌نمایش عکس"
-style="display:none;width:100%;max-height:220px;object-fit:contain;border:1px solid #eee;border-radius:10px;margin:8px 0;"
->
+            </div>
 
-<input
-id="newImage"
-placeholder="یا لینک عکس (اختیاری)"
->
-
-<select id="newCategory">
-
-<option value="گردنبند">گردنبند</option>
-<option value="انگشتر">انگشتر</option>
-<option value="دستبند">دستبند</option>
-<option value="گوشواره">گوشواره</option>
-
-</select>
-
-<button
-class="btn"
-onclick="addProduct()"
->
-افزودن طلا
-</button>
+        </div>
 
 
-</div>
+        <button class="owner-save" onclick="addGold()">
+            ➕ افزودن طلا
+        </button>
+
+
+        <hr>
+
+
+        <h3>🏪 اطلاعات شعبه‌ها</h3>
+
+        <input
+            id="branch1Input"
+            placeholder="اطلاعات شعبه ۱"
+        >
+
+        <input
+            id="branch2Input"
+            placeholder="اطلاعات شعبه ۲"
+        >
+
+        <button class="owner-save" onclick="saveBranches()">
+            ذخیره شعبه‌ها
+        </button>
+
+        <br><br>
+
+        <button class="owner-logout" onclick="ownerLogout()">
+            خروج مالک
+        </button>
+
+    </div>
 
 </div>
 
 </section>
+
+</div>
 
 
 <footer>
-
-<div class="gold">
-طلای نوروزی
-</div>
-
-<br>
-
-فروشگاه طلا و جواهر
-
-<br><br>
-
-© 2026 تمامی حقوق محفوظ است.
-
+    © 2026 طلای نوروزی | تمامی حقوق محفوظ است
 </footer>
 
 
 <script>
 
-function formatToman(value){
+/* =========================
+   تنظیمات مالک
+========================= */
 
-const n = Number(value);
+const OWNER_PASSWORD = "amirprl9900";
 
-return n > 0
-? new Intl.NumberFormat('fa-IR').format(n)
-: 'قیمت ثبت نشده';
+
+/* =========================
+   عکس انتخاب شده
+========================= */
+
+let selectedGoldImage = "";
+
+
+/* =========================
+   ورود مالک
+========================= */
+
+function ownerLogin(){
+
+    const password =
+        document.getElementById("ownerPassword").value;
+
+    if(password === OWNER_PASSWORD){
+
+        document.body.classList.add("owner-mode");
+
+        document.getElementById("loginBox")
+            .classList.add("hidden");
+
+        document.getElementById("ownerControls")
+            .classList.remove("hidden");
+
+        loadSettings();
+
+        alert("ورود مالک با موفقیت انجام شد.");
+
+    }else{
+
+        alert("رمز مالک اشتباه است.");
+
+    }
+}
+
+
+/* =========================
+   خروج مالک
+========================= */
+
+function ownerLogout(){
+
+    document.body.classList.remove("owner-mode");
+
+    document.getElementById("loginBox")
+        .classList.remove("hidden");
+
+    document.getElementById("ownerControls")
+        .classList.add("hidden");
 
 }
 
 
-function saveGold18Rate(){
+/* =========================
+   انتخاب عکس از گالری
+========================= */
 
-const v =
-Number(
-document.getElementById('gold18Input').value
-);
+document
+    .getElementById("newGoldImage")
+    .addEventListener(
+        "change",
+        function(event){
 
-if(!v || v <= 0){
+            const file =
+                event.target.files[0];
 
-alert('لطفاً نرخ معتبر وارد کنید.');
+            if(!file){
 
-return;
+                selectedGoldImage = "";
+
+                document.getElementById("imagePreview").innerHTML = `
+                    <span style="color:#888;">
+                        هنوز عکسی انتخاب نشده
+                    </span>
+                `;
+
+                return;
+            }
+
+
+            if(!file.type.startsWith("image/")){
+
+                alert("لطفاً یک عکس انتخاب کنید.");
+
+                this.value = "";
+
+                selectedGoldImage = "";
+
+                return;
+
+            }
+
+
+            const reader =
+                new FileReader();
+
+
+            reader.onload =
+                function(e){
+
+                    selectedGoldImage =
+                        e.target.result;
+
+
+                    document.getElementById(
+                        "imagePreview"
+                    ).innerHTML = `
+
+                        <img
+                            src="${selectedGoldImage}"
+                            alt="پیش‌نمایش عکس طلا"
+                        >
+
+                    `;
+
+                };
+
+
+            reader.readAsDataURL(file);
+
+        }
+    );
+
+
+/* =========================
+   نرخ طلا
+========================= */
+
+function showRate(rate){
+
+    const box =
+        document.getElementById("gold18k-price");
+
+    box.textContent =
+        Number(rate).toLocaleString("fa-IR")
+        + " تومان / گرم";
+
+    document.getElementById("rate-time")
+        .textContent =
+        "آخرین بروزرسانی: "
+        + new Date().toLocaleTimeString("fa-IR");
 
 }
 
-localStorage.setItem('gold18Rate',v);
 
-loadGold18Rate();
+/* =========================
+   ذخیره نرخ دستی
+========================= */
 
-alert('نرخ طلای ۱۸ عیار ذخیره شد.');
+function saveRate(){
+
+    const rate =
+        document.getElementById("manualRate").value;
+
+    if(!rate){
+
+        alert("لطفاً نرخ را وارد کنید.");
+
+        return;
+
+    }
+
+
+    localStorage.setItem(
+        "gold18kRate",
+        rate
+    );
+
+
+    showRate(rate);
+
+
+    alert("نرخ ذخیره شد.");
 
 }
 
 
-function loadGold18Rate(){
+/* =========================
+   حذف فقط یک طلا
+========================= */
 
-const v =
-localStorage.getItem('gold18Rate');
+function deleteGold(button){
 
-document.getElementById(
-'gold18Rate'
-).textContent =
-formatToman(v);
+    if(
+        confirm(
+            "آیا مطمئنی می‌خواهی فقط همین طلا حذف شود؟"
+        )
+    ){
 
-if(v){
+        const product =
+            button.closest(".product");
 
-document.getElementById(
-'gold18Input'
-).value = v;
+        if(product){
+
+            product.remove();
+
+        }
+
+    }
 
 }
 
+
+/* =========================
+   افزودن طلا
+========================= */
+
+function addGold(){
+
+    const name =
+        document.getElementById("newGoldName")
+        .value
+        .trim();
+
+
+    const weight =
+        document.getElementById("newGoldWeight")
+        .value
+        .trim();
+
+
+    const karat =
+        document.getElementById("newGoldKarat")
+        .value
+        .trim();
+
+
+    if(!name || !weight){
+
+        alert("نام و وزن طلا را وارد کنید.");
+
+        return;
+
+    }
+
+
+    const image =
+        selectedGoldImage ||
+        "https://via.placeholder.com/600x400?text=Gold";
+
+
+    const product =
+        document.createElement("div");
+
+
+    product.className =
+        "product";
+
+
+    product.innerHTML = `
+
+        <img
+            src="${image}"
+            alt="${escapeHTML(name)}"
+        >
+
+        <h3>
+            ${escapeHTML(name)}
+        </h3>
+
+        <div class="product-info">
+
+            عیار: ${escapeHTML(karat)}<br>
+
+            وزن: ${escapeHTML(weight)} گرم
+
+        </div>
+
+        <button
+            class="delete-btn"
+            onclick="deleteGold(this)"
+        >
+            🗑️ حذف این طلا
+        </button>
+
+    `;
+
+
+    document
+        .getElementById("products")
+        .appendChild(product);
+
+
+    /* پاک کردن فرم */
+
+    document.getElementById("newGoldName")
+        .value = "";
+
+    document.getElementById("newGoldWeight")
+        .value = "";
+
+    document.getElementById("newGoldKarat")
+        .value = "18";
+
+    document.getElementById("newGoldImage")
+        .value = "";
+
+    selectedGoldImage = "";
+
+
+    document.getElementById("imagePreview")
+        .innerHTML = `
+            <span style="color:#888;">
+                هنوز عکسی انتخاب نشده
+            </span>
+        `;
+
+
+    alert("طلا با عکس انتخاب‌شده اضافه شد ✅");
+
 }
 
+
+/* =========================
+   جلوگیری از HTML ناخواسته
+========================= */
+
+function escapeHTML(text){
+
+    return text
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================
+   شعبه‌ها
+========================= */
 
 function saveBranches(){
 
-const data = {
-
-b1a:document.getElementById('branch1Address').value,
-b1p:document.getElementById('branch1Phone').value,
-b1h:document.getElementById('branch1Hours').value,
-
-b2a:document.getElementById('branch2Address').value,
-b2p:document.getElementById('branch2Phone').value,
-b2h:document.getElementById('branch2Hours').value
-
-};
+    const branch1 =
+        document.getElementById("branch1Input")
+        .value
+        .trim();
 
 
-const items = [
-
-['branch1Address','displayBranch1Address','آدرس: ',data.b1a],
-['branch1Phone','displayBranch1Phone','تلفن: ',data.b1p],
-['branch1Hours','displayBranch1Hours','ساعت کاری: ',data.b1h],
-
-['branch2Address','displayBranch2Address','آدرس: ',data.b2a],
-['branch2Phone','displayBranch2Phone','تلفن: ',data.b2p],
-['branch2Hours','displayBranch2Hours','ساعت کاری: ',data.b2h]
-
-];
+    const branch2 =
+        document.getElementById("branch2Input")
+        .value
+        .trim();
 
 
-items.forEach(item=>{
-
-if(item[3]){
-
-localStorage.setItem(
-item[0],
-item[3]
-);
-
-document.getElementById(
-item[1]
-).textContent =
-item[2] + item[3];
-
-}
-
-});
+    localStorage.setItem(
+        "branch1",
+        branch1
+    );
 
 
-alert('اطلاعات شعبه‌ها ذخیره شد.');
+    localStorage.setItem(
+        "branch2",
+        branch2
+    );
+
+
+    document.getElementById("branch1Text")
+        .textContent =
+        branch1 || "اطلاعات شعبه ۱";
+
+
+    document.getElementById("branch2Text")
+        .textContent =
+        branch2 || "اطلاعات شعبه ۲";
+
+
+    alert("اطلاعات شعبه‌ها ذخیره شد.");
 
 }
 
 
-function loadBranches(){
+/* =========================
+   بارگذاری تنظیمات
+========================= */
 
-const items = [
+function loadSettings(){
 
-['branch1Address','displayBranch1Address','آدرس: '],
-['branch1Phone','displayBranch1Phone','تلفن: '],
-['branch1Hours','displayBranch1Hours','ساعت کاری: '],
-
-['branch2Address','displayBranch2Address','آدرس: '],
-['branch2Phone','displayBranch2Phone','تلفن: '],
-['branch2Hours','displayBranch2Hours','ساعت کاری: ']
-
-];
+    const rate =
+        localStorage.getItem("gold18kRate");
 
 
-items.forEach(item=>{
-
-const value =
-localStorage.getItem(item[0]);
-
-if(value){
-
-document.getElementById(
-item[0]
-).value = value;
-
-document.getElementById(
-item[1]
-).textContent =
-item[2] + value;
-
-}
-
-});
-
-}
+    const branch1 =
+        localStorage.getItem("branch1");
 
 
-function filterProducts(){
-
-const search =
-document.getElementById('search')
-.value
-.toLowerCase();
-
-const category =
-document.getElementById('category')
-.value;
+    const branch2 =
+        localStorage.getItem("branch2");
 
 
-document
-.querySelectorAll('.product')
-.forEach(product=>{
+    if(rate){
 
-const text =
-product.innerText.toLowerCase();
+        document.getElementById("manualRate")
+            .value = rate;
 
-const searchOK =
-text.includes(search);
+        showRate(rate);
 
-const categoryOK =
-category === 'all' ||
-product.dataset.category === category;
+    }
 
-product.style.display =
-searchOK && categoryOK
-? ''
-: 'none';
 
-});
+    if(branch1){
+
+        document.getElementById("branch1Text")
+            .textContent =
+            branch1;
+
+
+        document.getElementById("branch1Input")
+            .value =
+            branch1;
+
+    }
+
+
+    if(branch2){
+
+        document.getElementById("branch2Text")
+            .textContent =
+            branch2;
+
+
+        document.getElementById("branch2Input")
+            .value =
+            branch2;
+
+    }
 
 }
 
 
-function loginOwner(){
+/* =========================
+   شروع سایت
+========================= */
 
-const password =
-document.getElementById(
-'ownerPassword'
-).value;
+window.addEventListener(
+    "load",
+    function(){
 
+        const rate =
+            localStorage.getItem("gold18kRate");
 
-if(password === 'amirprl9900'){
 
-document.getElementById(
-'ownerPanel'
-).style.display =
-'block';
+        if(rate){
 
+            showRate(rate);
 
-document
-.querySelectorAll('.owner-only')
-.forEach(button=>{
+        }else{
 
-button.style.display =
-'inline-block';
+            document.getElementById(
+                "gold18k-price"
+            ).textContent =
+                "قیمت را از پنل مالک وارد کنید";
 
-});
+        }
 
-
-loadGold18Rate();
-
-alert('✅ ورود مالک موفق بود');
-
-}else{
-
-alert('❌ رمز اشتباه است');
-
-}
-
-}
-
-
-function previewGoldImage(event){
-
-const file =
-event.target.files[0];
-
-const preview =
-document.getElementById(
-'goldImagePreview'
-);
-
-if(!file){
-
-preview.style.display =
-'none';
-
-return;
-
-}
-
-
-const reader =
-new FileReader();
-
-reader.onload =
-function(e){
-
-preview.src =
-e.target.result;
-
-preview.style.display =
-'block';
-
-};
-
-reader.readAsDataURL(file);
-
-}
-
-
-function addProduct(){
-
-const name =
-document.getElementById(
-'newName'
-).value.trim();
-
-const weight =
-document.getElementById(
-'newWeight'
-).value.trim();
-
-const kar =
-document.getElementById(
-'newKar'
-).value.trim();
-
-const imageLink =
-document.getElementById(
-'newImage'
-).value.trim();
-
-const category =
-document.getElementById(
-'newCategory'
-).value;
-
-const file =
-document.getElementById(
-'newImageFile'
-).files[0];
-
-
-if(!name){
-
-alert('لطفاً نام طلا را وارد کنید.');
-
-return;
-
-}
-
-
-function createProduct(image){
-
-const product =
-document.createElement('div');
-
-product.className =
-'product';
-
-product.dataset.category =
-category;
-
-
-const img =
-document.createElement('img');
-
-img.src =
-image ||
-'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=80';
-
-img.alt =
-name;
-
-
-const info =
-document.createElement('div');
-
-info.className =
-'product-info';
-
-
-const title =
-document.createElement('h3');
-
-title.textContent =
-name;
-
-
-const detail =
-document.createElement('div');
-
-detail.className =
-'detail';
-
-detail.innerHTML =
-'وزن: ' +
-(weight || 'ثبت نشده') +
-'<br>عیار: ' +
-(kar || '18');
-
-
-const badge =
-document.createElement('span');
-
-badge.className =
-'badge';
-
-badge.textContent =
-category;
-
-
-const br =
-document.createElement('br');
-
-
-const deleteButton =
-document.createElement('button');
-
-deleteButton.className =
-'delete-btn owner-only';
-
-deleteButton.textContent =
-'🗑️ حذف این طلا';
-
-deleteButton.onclick =
-function(){
-
-removeGold(this);
-
-};
-
-
-info.appendChild(title);
-info.appendChild(detail);
-info.appendChild(badge);
-info.appendChild(br);
-info.appendChild(deleteButton);
-
-product.appendChild(img);
-product.appendChild(info);
-
-
-document
-.getElementById('productList')
-.prepend(product);
-
-
-document.getElementById('newName').value = '';
-document.getElementById('newWeight').value = '';
-document.getElementById('newKar').value = '';
-document.getElementById('newImage').value = '';
-document.getElementById('newImageFile').value = '';
-
-document.getElementById(
-'goldImagePreview'
-).style.display = 'none';
-
-alert('✅ طلا با موفقیت اضافه شد.');
-
-}
-
-
-if(file){
-
-const reader =
-new FileReader();
-
-reader.onload =
-function(e){
-
-createProduct(
-e.target.result
-);
-
-};
-
-reader.readAsDataURL(file);
-
-}else{
-
-createProduct(imageLink);
-
-}
-
-}
-
-
-/* حذف فقط طلای انتخاب‌شده */
-
-function removeGold(button){
-
-const product =
-button.closest('.product');
-
-if(!product){
-
-return;
-
-}
-
-
-const title =
-product.querySelector('h3');
-
-const name =
-title
-? title.textContent
-: 'این طلا';
-
-
-if(!confirm(
-'آیا مطمئنی می‌خواهی «' +
-name +
-'» حذف شود؟'
-)){
-
-return;
-
-}
-
-
-product.remove();
-
-alert(
-'✅ «' +
-name +
-'» حذف شد.'
-);
-
-}
-
-
-document.addEventListener(
-'DOMContentLoaded',
-function(){
-
-loadBranches();
-
-loadGold18Rate();
-
-}
+    }
 );
 
 </script>
 
 </body>
-    </html>
+        </html>
