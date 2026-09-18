@@ -89,6 +89,34 @@ nav a:hover{
     margin-bottom:18px;
 }
 
+/* نرخ طلا */
+
+.gold-rate{
+    background:linear-gradient(135deg,#fffdf5,#fff3bd);
+    border:2px solid #d4af37;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 3px 12px #ddd;
+}
+
+.gold-rate h3{
+    color:#806000;
+    margin-top:0;
+}
+
+.gold-price{
+    font-size:30px;
+    font-weight:bold;
+    color:#806000;
+    margin:15px 0;
+}
+
+.rate-time{
+    color:#777;
+    font-size:13px;
+}
+
 .products{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -201,9 +229,7 @@ footer{
     display:none;
 }
 
-/* =========================
-   انتخاب عکس از گالری
-========================= */
+/* انتخاب عکس */
 
 .gallery-box{
     margin:10px 0 15px;
@@ -259,6 +285,10 @@ footer{
         height:200px;
     }
 
+    .gold-price{
+        font-size:25px;
+    }
+
 }
 </style>
 </head>
@@ -267,11 +297,12 @@ footer{
 
 <header>
     <h1>✨ طلای نوروزی ✨</h1>
-    <p>فروش طلا و محصولات طلای نوروزی</p>
+    <p>مرجع قیمت و فروش طلا</p>
 </header>
 
 <nav>
     <a href="#home">خانه</a>
+    <a href="#rate">نرخ طلا</a>
     <a href="#gold">طلاها</a>
     <a href="#branches">شعبه‌ها</a>
     <a href="#owner">مالک</a>
@@ -280,31 +311,85 @@ footer{
 <div class="container">
 
 <section id="home" class="hero">
-    <h2>به طلای نوروزی خوش آمدید</h2>
+
+    <h2>
+        به طلای نوروزی خوش آمدید
+    </h2>
+
     <p>
-        مشاهده و خرید محصولات طلای نوروزی
+        مشاهده نرخ روز طلای ۱۸ عیار و محصولات طلای نوروزی
     </p>
+
 </section>
 
 
+<!-- =========================
+     نرخ دستی طلا
+========================= -->
+
+<section id="rate" class="section">
+
+    <h2 class="section-title">
+        💰 نرخ روز طلا
+    </h2>
+
+    <div class="gold-rate">
+
+        <h3>
+            طلای ۱۸ عیار
+        </h3>
+
+        <div
+            id="gold18k-price"
+            class="gold-price"
+        >
+            نرخ هنوز وارد نشده است
+        </div>
+
+        <div
+            id="rate-time"
+            class="rate-time"
+        >
+            آخرین بروزرسانی: —
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     طلاها
+========================= -->
+
 <section id="gold" class="section">
 
-<h2 class="section-title">💎 طلاهای موجود</h2>
+<h2 class="section-title">
+    💎 طلاهای موجود
+</h2>
 
 <div class="products" id="products">
 
     <div class="product">
 
-        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80">
+        <img
+            src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80"
+            alt="گردنبند طلا"
+        >
 
-        <h3>گردنبند طلا</h3>
+        <h3>
+            گردنبند طلا
+        </h3>
 
         <div class="product-info">
             عیار: ۱۸<br>
             وزن: ۵ گرم
         </div>
 
-        <button class="delete-btn" onclick="deleteGold(this)">
+        <button
+            class="delete-btn"
+            onclick="deleteGold(this)"
+        >
             🗑️ حذف این طلا
         </button>
 
@@ -313,16 +398,24 @@ footer{
 
     <div class="product">
 
-        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80">
+        <img
+            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80"
+            alt="انگشتر طلا"
+        >
 
-        <h3>انگشتر طلا</h3>
+        <h3>
+            انگشتر طلا
+        </h3>
 
         <div class="product-info">
             عیار: ۱۸<br>
             وزن: ۳ گرم
         </div>
 
-        <button class="delete-btn" onclick="deleteGold(this)">
+        <button
+            class="delete-btn"
+            onclick="deleteGold(this)"
+        >
             🗑️ حذف این طلا
         </button>
 
@@ -331,16 +424,24 @@ footer{
 
     <div class="product">
 
-        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&q=80">
+        <img
+            src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=600&q=80"
+            alt="دستبند طلا"
+        >
 
-        <h3>دستبند طلا</h3>
+        <h3>
+            دستبند طلا
+        </h3>
 
         <div class="product-info">
             عیار: ۱۸<br>
             وزن: ۷ گرم
         </div>
 
-        <button class="delete-btn" onclick="deleteGold(this)">
+        <button
+            class="delete-btn"
+            onclick="deleteGold(this)"
+        >
             🗑️ حذف این طلا
         </button>
 
@@ -349,16 +450,24 @@ footer{
 
     <div class="product">
 
-        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80">
+        <img
+            src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80"
+            alt="گوشواره طلا"
+        >
 
-        <h3>گوشواره طلا</h3>
+        <h3>
+            گوشواره طلا
+        </h3>
 
         <div class="product-info">
             عیار: ۱۸<br>
             وزن: ۲ گرم
         </div>
 
-        <button class="delete-btn" onclick="deleteGold(this)">
+        <button
+            class="delete-btn"
+            onclick="deleteGold(this)"
+        >
             🗑️ حذف این طلا
         </button>
 
@@ -369,9 +478,15 @@ footer{
 </section>
 
 
+<!-- =========================
+     شعبه‌ها
+========================= -->
+
 <section id="branches" class="section">
 
-<h2 class="section-title">🏪 شعبه‌های طلای نوروزی</h2>
+<h2 class="section-title">
+    🏪 شعبه‌های طلای نوروزی
+</h2>
 
 <div class="branches">
 
@@ -394,9 +509,15 @@ footer{
 </section>
 
 
+<!-- =========================
+     مالک
+========================= -->
+
 <section id="owner" class="section">
 
-<h2 class="section-title">🔐 پنل مالک</h2>
+<h2 class="section-title">
+    🔐 پنل مالک
+</h2>
 
 <div class="owner-panel">
 
@@ -412,7 +533,10 @@ footer{
             placeholder="رمز مالک"
         >
 
-        <button class="owner-login" onclick="ownerLogin()">
+        <button
+            class="owner-login"
+            onclick="ownerLogin()"
+        >
             ورود مالک
         </button>
 
@@ -421,10 +545,39 @@ footer{
 
     <div id="ownerControls" class="hidden">
 
-        <h3>⚙️ تنظیمات مالک</h3>
+        <h3>
+            ⚙️ تنظیمات مالک
+        </h3>
 
 
-        <h3>➕ افزودن طلا</h3>
+        <!-- نرخ دستی -->
+
+        <h3>
+            💰 تغییر نرخ طلای ۱۸ عیار
+        </h3>
+
+        <input
+            type="text"
+            id="manualRate"
+            placeholder="مثلاً ۱۰,۵۰۰,۰۰۰ تومان"
+        >
+
+        <button
+            class="owner-save"
+            onclick="saveRate()"
+        >
+            💾 ذخیره نرخ
+        </button>
+
+
+        <hr>
+
+
+        <!-- افزودن طلا -->
+
+        <h3>
+            ➕ افزودن طلا
+        </h3>
 
         <input
             id="newGoldName"
@@ -469,7 +622,10 @@ footer{
         </div>
 
 
-        <button class="owner-save" onclick="addGold()">
+        <button
+            class="owner-save"
+            onclick="addGold()"
+        >
             ➕ افزودن طلا
         </button>
 
@@ -477,7 +633,11 @@ footer{
         <hr>
 
 
-        <h3>🏪 اطلاعات شعبه‌ها</h3>
+        <!-- شعبه‌ها -->
+
+        <h3>
+            🏪 اطلاعات شعبه‌ها
+        </h3>
 
         <input
             id="branch1Input"
@@ -489,13 +649,19 @@ footer{
             placeholder="اطلاعات شعبه ۲"
         >
 
-        <button class="owner-save" onclick="saveBranches()">
+        <button
+            class="owner-save"
+            onclick="saveBranches()"
+        >
             ذخیره شعبه‌ها
         </button>
 
         <br><br>
 
-        <button class="owner-logout" onclick="ownerLogout()">
+        <button
+            class="owner-logout"
+            onclick="ownerLogout()"
+        >
             خروج مالک
         </button>
 
@@ -516,14 +682,14 @@ footer{
 <script>
 
 /* =========================
-   تنظیمات مالک
+   رمز مالک
 ========================= */
 
 const OWNER_PASSWORD = "amirprl9900";
 
 
 /* =========================
-   عکس انتخاب شده
+   عکس انتخاب‌شده
 ========================= */
 
 let selectedGoldImage = "";
@@ -536,25 +702,40 @@ let selectedGoldImage = "";
 function ownerLogin(){
 
     const password =
-        document.getElementById("ownerPassword").value;
+        document.getElementById(
+            "ownerPassword"
+        ).value;
+
 
     if(password === OWNER_PASSWORD){
 
-        document.body.classList.add("owner-mode");
+        document.body.classList.add(
+            "owner-mode"
+        );
 
-        document.getElementById("loginBox")
-            .classList.add("hidden");
 
-        document.getElementById("ownerControls")
-            .classList.remove("hidden");
+        document.getElementById(
+            "loginBox"
+        ).classList.add("hidden");
+
+
+        document.getElementById(
+            "ownerControls"
+        ).classList.remove("hidden");
+
 
         loadSettings();
 
-        alert("ورود مالک با موفقیت انجام شد.");
+
+        alert(
+            "ورود مالک با موفقیت انجام شد."
+        );
 
     }else{
 
-        alert("رمز مالک اشتباه است.");
+        alert(
+            "رمز مالک اشتباه است."
+        );
 
     }
 }
@@ -566,90 +747,190 @@ function ownerLogin(){
 
 function ownerLogout(){
 
-    document.body.classList.remove("owner-mode");
+    document.body.classList.remove(
+        "owner-mode"
+    );
 
-    document.getElementById("loginBox")
-        .classList.remove("hidden");
 
-    document.getElementById("ownerControls")
-        .classList.add("hidden");
+    document.getElementById(
+        "loginBox"
+    ).classList.remove("hidden");
+
+
+    document.getElementById(
+        "ownerControls"
+    ).classList.add("hidden");
 
 }
 
 
 /* =========================
-   انتخاب عکس از گالری
+   انتخاب عکس
 ========================= */
 
 document
-    .getElementById("newGoldImage")
-    .addEventListener(
-        "change",
-        function(event){
+.getElementById("newGoldImage")
+.addEventListener(
+    "change",
+    function(event){
 
-            const file =
-                event.target.files[0];
-
-            if(!file){
-
-                selectedGoldImage = "";
-
-                document.getElementById("imagePreview").innerHTML = `
-                    <span style="color:#888;">
-                        هنوز عکسی انتخاب نشده
-                    </span>
-                `;
-
-                return;
-            }
+        const file =
+            event.target.files[0];
 
 
-            if(!file.type.startsWith("image/")){
+        if(!file){
 
-                alert("لطفاً یک عکس انتخاب کنید.");
+            selectedGoldImage = "";
 
-                this.value = "";
+            document.getElementById(
+                "imagePreview"
+            ).innerHTML = `
+                <span style="color:#888;">
+                    هنوز عکسی انتخاب نشده
+                </span>
+            `;
 
-                selectedGoldImage = "";
-
-                return;
-
-            }
-
-
-            const reader =
-                new FileReader();
-
-
-            reader.onload =
-                function(e){
-
-                    selectedGoldImage =
-                        e.target.result;
-
-
-                    document.getElementById(
-                        "imagePreview"
-                    ).innerHTML = `
-
-                        <img
-                            src="${selectedGoldImage}"
-                            alt="پیش‌نمایش عکس طلا"
-                        >
-
-                    `;
-
-                };
-
-
-            reader.readAsDataURL(file);
+            return;
 
         }
-    );
+
+
+        if(!file.type.startsWith("image/")){
+
+            alert(
+                "لطفاً یک عکس انتخاب کنید."
+            );
+
+            this.value = "";
+
+            selectedGoldImage = "";
+
+            return;
+
+        }
+
+
+        const reader =
+            new FileReader();
+
+
+        reader.onload =
+            function(e){
+
+                selectedGoldImage =
+                    e.target.result;
+
+
+                document.getElementById(
+                    "imagePreview"
+                ).innerHTML = `
+
+                    <img
+                        src="${selectedGoldImage}"
+                        alt="پیش‌نمایش عکس طلا"
+                    >
+
+                `;
+
+            };
+
+
+        reader.readAsDataURL(file);
+
+    }
+);
 
 
 /* =========================
-   حذف فقط یک طلا
+   ذخیره نرخ دستی
+========================= */
+
+function saveRate(){
+
+    const rate =
+        document.getElementById(
+            "manualRate"
+        ).value.trim();
+
+
+    if(!rate){
+
+        alert(
+            "لطفاً نرخ را وارد کنید."
+        );
+
+        return;
+
+    }
+
+
+    const time =
+        new Date().toLocaleString(
+            "fa-IR"
+        );
+
+
+    localStorage.setItem(
+        "gold18kRate",
+        rate
+    );
+
+
+    localStorage.setItem(
+        "rateTime",
+        time
+    );
+
+
+    showRate();
+
+
+    alert(
+        "نرخ با موفقیت ذخیره شد ✅"
+    );
+
+}
+
+
+/* =========================
+   نمایش نرخ
+========================= */
+
+function showRate(){
+
+    const rate =
+        localStorage.getItem(
+            "gold18kRate"
+        );
+
+
+    const time =
+        localStorage.getItem(
+            "rateTime"
+        );
+
+
+    if(rate){
+
+        document.getElementById(
+            "gold18k-price"
+        ).textContent =
+            rate + " تومان";
+
+
+        document.getElementById(
+            "rate-time"
+        ).textContent =
+            "آخرین بروزرسانی: " +
+            (time || "—");
+
+    }
+
+}
+
+
+/* =========================
+   حذف طلا
 ========================= */
 
 function deleteGold(button){
@@ -662,6 +943,7 @@ function deleteGold(button){
 
         const product =
             button.closest(".product");
+
 
         if(product){
 
@@ -681,26 +963,34 @@ function deleteGold(button){
 function addGold(){
 
     const name =
-        document.getElementById("newGoldName")
+        document.getElementById(
+            "newGoldName"
+        )
         .value
         .trim();
 
 
     const weight =
-        document.getElementById("newGoldWeight")
+        document.getElementById(
+            "newGoldWeight"
+        )
         .value
         .trim();
 
 
     const karat =
-        document.getElementById("newGoldKarat")
+        document.getElementById(
+            "newGoldKarat"
+        )
         .value
         .trim();
 
 
     if(!name || !weight){
 
-        alert("نام و وزن طلا را وارد کنید.");
+        alert(
+            "نام و وزن طلا را وارد کنید."
+        );
 
         return;
 
@@ -733,9 +1023,14 @@ function addGold(){
 
         <div class="product-info">
 
-            عیار: ${escapeHTML(karat)}<br>
+            عیار:
+            ${escapeHTML(karat)}
 
-            وزن: ${escapeHTML(weight)} گرم
+            <br>
+
+            وزن:
+            ${escapeHTML(weight)}
+            گرم
 
         </div>
 
@@ -754,30 +1049,41 @@ function addGold(){
         .appendChild(product);
 
 
-    document.getElementById("newGoldName")
-        .value = "";
+    document.getElementById(
+        "newGoldName"
+    ).value = "";
 
-    document.getElementById("newGoldWeight")
-        .value = "";
 
-    document.getElementById("newGoldKarat")
-        .value = "18";
+    document.getElementById(
+        "newGoldWeight"
+    ).value = "";
 
-    document.getElementById("newGoldImage")
-        .value = "";
+
+    document.getElementById(
+        "newGoldKarat"
+    ).value = "18";
+
+
+    document.getElementById(
+        "newGoldImage"
+    ).value = "";
+
 
     selectedGoldImage = "";
 
 
-    document.getElementById("imagePreview")
-        .innerHTML = `
-            <span style="color:#888;">
-                هنوز عکسی انتخاب نشده
-            </span>
-        `;
+    document.getElementById(
+        "imagePreview"
+    ).innerHTML = `
+        <span style="color:#888;">
+            هنوز عکسی انتخاب نشده
+        </span>
+    `;
 
 
-    alert("طلا با عکس انتخاب‌شده اضافه شد ✅");
+    alert(
+        "طلا با عکس انتخاب‌شده اضافه شد ✅"
+    );
 
 }
 
@@ -799,19 +1105,23 @@ function escapeHTML(text){
 
 
 /* =========================
-   شعبه‌ها
+   ذخیره شعبه‌ها
 ========================= */
 
 function saveBranches(){
 
     const branch1 =
-        document.getElementById("branch1Input")
+        document.getElementById(
+            "branch1Input"
+        )
         .value
         .trim();
 
 
     const branch2 =
-        document.getElementById("branch2Input")
+        document.getElementById(
+            "branch2Input"
+        )
         .value
         .trim();
 
@@ -828,17 +1138,23 @@ function saveBranches(){
     );
 
 
-    document.getElementById("branch1Text")
-        .textContent =
-        branch1 || "اطلاعات شعبه ۱";
+    document.getElementById(
+        "branch1Text"
+    ).textContent =
+        branch1 ||
+        "اطلاعات شعبه ۱";
 
 
-    document.getElementById("branch2Text")
-        .textContent =
-        branch2 || "اطلاعات شعبه ۲";
+    document.getElementById(
+        "branch2Text"
+    ).textContent =
+        branch2 ||
+        "اطلاعات شعبه ۲";
 
 
-    alert("اطلاعات شعبه‌ها ذخیره شد.");
+    alert(
+        "اطلاعات شعبه‌ها ذخیره شد."
+    );
 
 }
 
@@ -849,23 +1165,62 @@ function saveBranches(){
 
 function loadSettings(){
 
+    const rate =
+        localStorage.getItem(
+            "gold18kRate"
+        );
+
+
+    const rateTime =
+        localStorage.getItem(
+            "rateTime"
+        );
+
+
     const branch1 =
-        localStorage.getItem("branch1");
+        localStorage.getItem(
+            "branch1"
+        );
 
 
     const branch2 =
-        localStorage.getItem("branch2");
+        localStorage.getItem(
+            "branch2"
+        );
+
+
+    if(rate){
+
+        document.getElementById(
+            "manualRate"
+        ).value =
+            rate;
+
+    }
+
+
+    if(rateTime){
+
+        document.getElementById(
+            "rate-time"
+        ).textContent =
+            "آخرین بروزرسانی: " +
+            rateTime;
+
+    }
 
 
     if(branch1){
 
-        document.getElementById("branch1Text")
-            .textContent =
+        document.getElementById(
+            "branch1Text"
+        ).textContent =
             branch1;
 
 
-        document.getElementById("branch1Input")
-            .value =
+        document.getElementById(
+            "branch1Input"
+        ).value =
             branch1;
 
     }
@@ -873,18 +1228,34 @@ function loadSettings(){
 
     if(branch2){
 
-        document.getElementById("branch2Text")
-            .textContent =
+        document.getElementById(
+            "branch2Text"
+        ).textContent =
             branch2;
 
 
-        document.getElementById("branch2Input")
-            .value =
+        document.getElementById(
+            "branch2Input"
+        ).value =
             branch2;
 
     }
 
 }
+
+
+/* =========================
+   اجرای اولیه
+========================= */
+
+window.addEventListener(
+    "load",
+    function(){
+
+        showRate();
+
+    }
+);
 
 </script>
 
