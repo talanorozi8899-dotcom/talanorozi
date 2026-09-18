@@ -12,20 +12,24 @@
     padding:0;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Tahoma,Arial,sans-serif;
-    background:#fff;
+    background:#ffffff !important;
     color:#222;
 }
 
 header{
-    background:#fff;
+    background:#ffffff;
     padding:20px 7%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    border-bottom:1px solid #eee;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    border-bottom:1px solid #eeeeee;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
     position:sticky;
     top:0;
     z-index:100;
@@ -37,10 +41,15 @@ header{
     font-weight:900;
 }
 
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
 nav a{
     color:#333;
     text-decoration:none;
-    margin:0 5px;
     padding:9px 12px;
     border-radius:8px;
 }
@@ -52,8 +61,8 @@ nav a:hover{
 
 .hero{
     text-align:center;
-    padding:75px 20px;
-    background:#fff;
+    padding:80px 20px;
+    background:#ffffff;
 }
 
 .hero h1{
@@ -72,6 +81,7 @@ nav a:hover{
     width:90%;
     max-width:1250px;
     margin:45px auto;
+    background:#ffffff;
 }
 
 .title{
@@ -142,8 +152,8 @@ nav a:hover{
 }
 
 .product{
-    background:#fff;
-    border:1px solid #eee;
+    background:#ffffff;
+    border:1px solid #eeeeee;
     border-radius:15px;
     overflow:hidden;
     box-shadow:0 5px 20px rgba(0,0,0,.07);
@@ -159,10 +169,12 @@ nav a:hover{
     width:100%;
     height:230px;
     object-fit:cover;
+    display:block;
 }
 
 .product-info{
     padding:18px;
+    background:#ffffff;
 }
 
 .product h3{
@@ -185,6 +197,22 @@ nav a:hover{
     margin-top:8px;
 }
 
+.delete-btn{
+    margin-top:15px;
+    padding:9px 14px;
+    border:1px solid #c62828;
+    border-radius:8px;
+    background:#fff;
+    color:#c62828;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#c62828;
+    color:#fff;
+}
+
 .branches{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -192,8 +220,8 @@ nav a:hover{
 }
 
 .branch{
-    background:#fff;
-    border:1px solid #eee;
+    background:#ffffff;
+    border:1px solid #eeeeee;
     border-radius:15px;
     padding:25px;
     box-shadow:0 5px 20px rgba(0,0,0,.06);
@@ -215,7 +243,7 @@ nav a:hover{
     padding:12px 24px;
     border:1px solid #d4af37;
     border-radius:9px;
-    background:#fff;
+    background:#ffffff;
     color:#b08a20;
     font-weight:bold;
     cursor:pointer;
@@ -226,25 +254,9 @@ nav a:hover{
     color:#fff;
 }
 
-.delete-btn{
-    margin-top:15px;
-    padding:9px 14px;
-    border:1px solid #c62828;
-    border-radius:8px;
-    background:#fff;
-    color:#c62828;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.delete-btn:hover{
-    background:#c62828;
-    color:#fff;
-}
-
 .owner{
-    background:#fff;
-    border:1px solid #eee;
+    background:#ffffff;
+    border:1px solid #eeeeee;
     border-radius:15px;
     padding:25px;
     box-shadow:0 5px 20px rgba(0,0,0,.06);
@@ -259,7 +271,8 @@ nav a:hover{
     padding:12px;
     border:1px solid #ddd;
     border-radius:8px;
-    background:#fff;
+    background:#ffffff;
+    color:#222;
 }
 
 .owner-panel{
@@ -284,8 +297,8 @@ footer{
     margin-top:60px;
     padding:30px;
     text-align:center;
-    background:#fff;
-    border-top:1px solid #eee;
+    background:#ffffff;
+    border-top:1px solid #eeeeee;
     color:#777;
 }
 
@@ -303,6 +316,10 @@ footer{
     .rate-number{
         font-size:30px;
     }
+
+    nav{
+        justify-content:center;
+    }
 }
 </style>
 </head>
@@ -311,9 +328,7 @@ footer{
 
 <header>
 
-<div class="logo">
-طلای نوروزی
-</div>
+<div class="logo">طلای نوروزی</div>
 
 <nav>
 <a href="#home">خانه</a>
@@ -328,9 +343,7 @@ footer{
 
 <section class="hero" id="home">
 
-<h1>
-طلای نوروزی
-</h1>
+<h1>طلای نوروزی</h1>
 
 <p>
 مشاهده طلاها، مشخصات و نرخ روز طلای ۱۸ عیار
@@ -345,9 +358,7 @@ footer{
 
 <section class="container" id="rate">
 
-<h2 class="title">
-نرخ روز طلا
-</h2>
+<h2 class="title">نرخ روز طلا</h2>
 
 <div class="rate-box">
 
@@ -356,9 +367,7 @@ footer{
 </div>
 
 <div class="rate-number">
-<span id="gold18Rate">
-قیمت ثبت نشده
-</span>
+<span id="gold18Rate">قیمت ثبت نشده</span>
 </div>
 
 <div class="rate-unit">
@@ -376,9 +385,7 @@ footer{
 
 <section class="container" id="products">
 
-<h2 class="title">
-طلاها
-</h2>
+<h2 class="title">طلاها</h2>
 
 <div class="filters">
 
@@ -393,25 +400,11 @@ id="category"
 onchange="filterProducts()"
 >
 
-<option value="all">
-همه دسته‌ها
-</option>
-
-<option value="گردنبند">
-گردنبند
-</option>
-
-<option value="انگشتر">
-انگشتر
-</option>
-
-<option value="دستبند">
-دستبند
-</option>
-
-<option value="گوشواره">
-گوشواره
-</option>
+<option value="all">همه دسته‌ها</option>
+<option value="گردنبند">گردنبند</option>
+<option value="انگشتر">انگشتر</option>
+<option value="دستبند">دستبند</option>
+<option value="گوشواره">گوشواره</option>
 
 </select>
 
@@ -430,9 +423,7 @@ alt="گردنبند طلا"
 
 <div class="product-info">
 
-<h3>
-گردنبند طلای ظریف
-</h3>
+<h3>گردنبند طلای ظریف</h3>
 
 <div class="detail">
 وزن: 4.20 گرم<br>
@@ -440,16 +431,14 @@ alt="گردنبند طلا"
 مدل: زنجیری
 </div>
 
-<span class="badge">
-گردنبند
-</span>
+<span class="badge">گردنبند</span>
 
 <br>
 
 <button
 class="delete-btn owner-only"
 onclick="removeGold(this)"
-style="display:none;"
+style="display:none"
 >
 🗑️ حذف این طلا
 </button>
@@ -468,9 +457,7 @@ alt="انگشتر طلا"
 
 <div class="product-info">
 
-<h3>
-انگشتر طلای نگین‌دار
-</h3>
+<h3>انگشتر طلای نگین‌دار</h3>
 
 <div class="detail">
 وزن: 3.10 گرم<br>
@@ -478,16 +465,14 @@ alt="انگشتر طلا"
 نگین: دارد
 </div>
 
-<span class="badge">
-انگشتر
-</span>
+<span class="badge">انگشتر</span>
 
 <br>
 
 <button
 class="delete-btn owner-only"
 onclick="removeGold(this)"
-style="display:none;"
+style="display:none"
 >
 🗑️ حذف این طلا
 </button>
@@ -506,9 +491,7 @@ alt="دستبند طلا"
 
 <div class="product-info">
 
-<h3>
-دستبند طلای کلاسیک
-</h3>
+<h3>دستبند طلای کلاسیک</h3>
 
 <div class="detail">
 وزن: 6.50 گرم<br>
@@ -516,16 +499,14 @@ alt="دستبند طلا"
 مدل: کلاسیک
 </div>
 
-<span class="badge">
-دستبند
-</span>
+<span class="badge">دستبند</span>
 
 <br>
 
 <button
 class="delete-btn owner-only"
 onclick="removeGold(this)"
-style="display:none;"
+style="display:none"
 >
 🗑️ حذف این طلا
 </button>
@@ -544,9 +525,7 @@ alt="گوشواره طلا"
 
 <div class="product-info">
 
-<h3>
-گوشواره طلای ظریف
-</h3>
+<h3>گوشواره طلای ظریف</h3>
 
 <div class="detail">
 وزن: 2.80 گرم<br>
@@ -554,16 +533,14 @@ alt="گوشواره طلا"
 مدل: ظریف
 </div>
 
-<span class="badge">
-گوشواره
-</span>
+<span class="badge">گوشواره</span>
 
 <br>
 
 <button
 class="delete-btn owner-only"
 onclick="removeGold(this)"
-style="display:none;"
+style="display:none"
 >
 🗑️ حذف این طلا
 </button>
@@ -589,9 +566,7 @@ style="display:none;"
 
 <div class="branch">
 
-<h3>
-شعبه ۱
-</h3>
+<h3>شعبه ۱</h3>
 
 <p>
 
@@ -618,9 +593,7 @@ style="display:none;"
 
 <div class="branch">
 
-<h3>
-شعبه ۲
-</h3>
+<h3>شعبه ۲</h3>
 
 <p>
 
@@ -807,21 +780,10 @@ placeholder="یا لینک عکس (اختیاری)"
 
 <select id="newCategory">
 
-<option value="گردنبند">
-گردنبند
-</option>
-
-<option value="انگشتر">
-انگشتر
-</option>
-
-<option value="دستبند">
-دستبند
-</option>
-
-<option value="گوشواره">
-گوشواره
-</option>
+<option value="گردنبند">گردنبند</option>
+<option value="انگشتر">انگشتر</option>
+<option value="دستبند">دستبند</option>
+<option value="گوشواره">گوشواره</option>
 
 </select>
 
@@ -859,10 +821,6 @@ onclick="addProduct()"
 
 <script>
 
-/* =========================
-   نرخ طلا
-========================= */
-
 function formatToman(value){
 
 const n = Number(value);
@@ -889,16 +847,11 @@ return;
 
 }
 
-localStorage.setItem(
-'gold18Rate',
-v
-);
+localStorage.setItem('gold18Rate',v);
 
 loadGold18Rate();
 
-alert(
-'نرخ طلای ۱۸ عیار ذخیره شد.'
-);
+alert('نرخ طلای ۱۸ عیار ذخیره شد.');
 
 }
 
@@ -924,13 +877,9 @@ document.getElementById(
 }
 
 
-/* =========================
-   شعبه‌ها
-========================= */
-
 function saveBranches(){
 
-const d = {
+const data = {
 
 b1a:document.getElementById('branch1Address').value,
 b1p:document.getElementById('branch1Phone').value,
@@ -945,73 +894,37 @@ b2h:document.getElementById('branch2Hours').value
 
 const items = [
 
-[
-'branch1Address',
-'displayBranch1Address',
-'آدرس: ',
-d.b1a
-],
+['branch1Address','displayBranch1Address','آدرس: ',data.b1a],
+['branch1Phone','displayBranch1Phone','تلفن: ',data.b1p],
+['branch1Hours','displayBranch1Hours','ساعت کاری: ',data.b1h],
 
-[
-'branch1Phone',
-'displayBranch1Phone',
-'تلفن: ',
-d.b1p
-],
-
-[
-'branch1Hours',
-'displayBranch1Hours',
-'ساعت کاری: ',
-d.b1h
-],
-
-[
-'branch2Address',
-'displayBranch2Address',
-'آدرس: ',
-d.b2a
-],
-
-[
-'branch2Phone',
-'displayBranch2Phone',
-'تلفن: ',
-d.b2p
-],
-
-[
-'branch2Hours',
-'displayBranch2Hours',
-'ساعت کاری: ',
-d.b2h
-]
+['branch2Address','displayBranch2Address','آدرس: ',data.b2a],
+['branch2Phone','displayBranch2Phone','تلفن: ',data.b2p],
+['branch2Hours','displayBranch2Hours','ساعت کاری: ',data.b2h]
 
 ];
 
 
-items.forEach(x=>{
+items.forEach(item=>{
 
-if(x[3]){
+if(item[3]){
 
 localStorage.setItem(
-x[0],
-x[3]
+item[0],
+item[3]
 );
 
 document.getElementById(
-x[1]
+item[1]
 ).textContent =
-x[2] + x[3];
+item[2] + item[3];
 
 }
 
 });
 
 
-alert(
-'اطلاعات شعبه‌ها ذخیره شد.'
-);
+alert('اطلاعات شعبه‌ها ذخیره شد.');
 
 }
 
@@ -1020,60 +933,32 @@ function loadBranches(){
 
 const items = [
 
-[
-'branch1Address',
-'displayBranch1Address',
-'آدرس: '
-],
+['branch1Address','displayBranch1Address','آدرس: '],
+['branch1Phone','displayBranch1Phone','تلفن: '],
+['branch1Hours','displayBranch1Hours','ساعت کاری: '],
 
-[
-'branch1Phone',
-'displayBranch1Phone',
-'تلفن: '
-],
-
-[
-'branch1Hours',
-'displayBranch1Hours',
-'ساعت کاری: '
-],
-
-[
-'branch2Address',
-'displayBranch2Address',
-'آدرس: '
-],
-
-[
-'branch2Phone',
-'displayBranch2Phone',
-'تلفن: '
-],
-
-[
-'branch2Hours',
-'displayBranch2Hours',
-'ساعت کاری: '
-]
+['branch2Address','displayBranch2Address','آدرس: '],
+['branch2Phone','displayBranch2Phone','تلفن: '],
+['branch2Hours','displayBranch2Hours','ساعت کاری: ']
 
 ];
 
 
-items.forEach(x=>{
+items.forEach(item=>{
 
-const v =
-localStorage.getItem(x[0]);
+const value =
+localStorage.getItem(item[0]);
 
-if(v){
-
-document.getElementById(
-x[0]
-).value = v;
+if(value){
 
 document.getElementById(
-x[1]
+item[0]
+).value = value;
+
+document.getElementById(
+item[1]
 ).textContent =
-x[2] + v;
+item[2] + value;
 
 }
 
@@ -1082,39 +967,34 @@ x[2] + v;
 }
 
 
-/* =========================
-   جستجوی طلا
-========================= */
-
 function filterProducts(){
 
-const s =
-document.getElementById(
-'search'
-).value.toLowerCase();
+const search =
+document.getElementById('search')
+.value
+.toLowerCase();
 
-const c =
-document.getElementById(
-'category'
-).value;
+const category =
+document.getElementById('category')
+.value;
 
 
 document
 .querySelectorAll('.product')
-.forEach(p=>{
+.forEach(product=>{
 
 const text =
-p.innerText.toLowerCase();
+product.innerText.toLowerCase();
 
-const okSearch =
-text.includes(s);
+const searchOK =
+text.includes(search);
 
-const okCategory =
-c === 'all' ||
-p.dataset.category === c;
+const categoryOK =
+category === 'all' ||
+product.dataset.category === category;
 
-p.style.display =
-okSearch && okCategory
+product.style.display =
+searchOK && categoryOK
 ? ''
 : 'none';
 
@@ -1122,10 +1002,6 @@ okSearch && okCategory
 
 }
 
-
-/* =========================
-   ورود مالک
-========================= */
 
 function loginOwner(){
 
@@ -1155,29 +1031,21 @@ button.style.display =
 
 loadGold18Rate();
 
-alert(
-'✅ ورود مالک موفق بود'
-);
+alert('✅ ورود مالک موفق بود');
 
 }else{
 
-alert(
-'❌ رمز اشتباه است'
-);
+alert('❌ رمز اشتباه است');
 
 }
 
 }
 
 
-/* =========================
-   پیش‌نمایش عکس
-========================= */
-
-function previewGoldImage(e){
+function previewGoldImage(event){
 
 const file =
-e.target.files[0];
+event.target.files[0];
 
 const preview =
 document.getElementById(
@@ -1198,10 +1066,10 @@ const reader =
 new FileReader();
 
 reader.onload =
-function(event){
+function(e){
 
 preview.src =
-event.target.result;
+e.target.result;
 
 preview.style.display =
 'block';
@@ -1212,10 +1080,6 @@ reader.readAsDataURL(file);
 
 }
 
-
-/* =========================
-   افزودن طلا
-========================= */
 
 function addProduct(){
 
@@ -1252,9 +1116,7 @@ document.getElementById(
 
 if(!name){
 
-alert(
-'لطفاً نام طلا را وارد کنید.'
-);
+alert('لطفاً نام طلا را وارد کنید.');
 
 return;
 
@@ -1343,17 +1205,12 @@ removeGold(this);
 
 
 info.appendChild(title);
-
 info.appendChild(detail);
-
 info.appendChild(badge);
-
 info.appendChild(br);
-
 info.appendChild(deleteButton);
 
 product.appendChild(img);
-
 product.appendChild(info);
 
 
@@ -1362,35 +1219,17 @@ document
 .prepend(product);
 
 
-document.getElementById(
-'newName'
-).value = '';
-
-document.getElementById(
-'newWeight'
-).value = '';
-
-document.getElementById(
-'newKar'
-).value = '';
-
-document.getElementById(
-'newImage'
-).value = '';
-
-document.getElementById(
-'newImageFile'
-).value = '';
+document.getElementById('newName').value = '';
+document.getElementById('newWeight').value = '';
+document.getElementById('newKar').value = '';
+document.getElementById('newImage').value = '';
+document.getElementById('newImageFile').value = '';
 
 document.getElementById(
 'goldImagePreview'
-).style.display =
-'none';
+).style.display = 'none';
 
-
-alert(
-'✅ طلا با موفقیت اضافه شد.'
-);
+alert('✅ طلا با موفقیت اضافه شد.');
 
 }
 
@@ -1401,10 +1240,10 @@ const reader =
 new FileReader();
 
 reader.onload =
-function(event){
+function(e){
 
 createProduct(
-event.target.result
+e.target.result
 );
 
 };
@@ -1413,18 +1252,14 @@ reader.readAsDataURL(file);
 
 }else{
 
-createProduct(
-imageLink
-);
+createProduct(imageLink);
 
 }
 
 }
 
 
-/* =========================
-   حذف فقط همان طلای انتخاب‌شده
-========================= */
+/* حذف فقط طلای انتخاب‌شده */
 
 function removeGold(button){
 
@@ -1438,12 +1273,12 @@ return;
 }
 
 
-const titleElement =
+const title =
 product.querySelector('h3');
 
 const name =
-titleElement
-? titleElement.textContent
+title
+? title.textContent
 : 'این طلا';
 
 
@@ -1460,7 +1295,6 @@ return;
 
 product.remove();
 
-
 alert(
 '✅ «' +
 name +
@@ -1469,10 +1303,6 @@ name +
 
 }
 
-
-/* =========================
-   شروع سایت
-========================= */
 
 document.addEventListener(
 'DOMContentLoaded',
